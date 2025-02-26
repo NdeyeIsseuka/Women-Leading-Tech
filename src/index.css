@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-background {
+    background-size: cover;
+    background-image: url(/bg.avif);
+}
+
