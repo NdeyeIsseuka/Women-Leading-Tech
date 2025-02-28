@@ -3,22 +3,20 @@ import { motion } from 'framer-motion';
 
 
 export default function Accueil() {
-    const words = ["Bienvenue"," dans notre espace", " dédié à l'empowerment"," des femmes dans le tech. (❁´◡`❁)"];
+    const words = ["Bienvenue"," dans notre espace", " dédié à l'empowerment"," des femmes dans les TIC(❁´◡`❁)"];
 
     return (
         <>
-    <div className="">
+    <div className="bg-pink-300">
  
-    <div className=" min-h-screen ">
-      <div className="container mx-auto px-4 py-8 sm:px-6 lg:px-8 bg-[url('./Ad.jpg')] bg-cover bg-center min-w-full">
-      <div className="p-5 mx-auto sm:p-10 md:p-16  dark:text-gray-800">
-	<div className="flex flex-col max-w-3xl mx-auto overflow-hidden rounded">
-		<img src="./lead1.avif" alt="" className="w-full h-60 sm:h-96 " />
-		<div className="p-6 pb-12 m-4 mx-auto -mt-16 space-y-6 lg:max-w-2xl sm:px-10 sm:mx-12 lg:rounded-md 
-        bg-gray-950">
-			<div className="space-y-2 ">
-                
-                <div className="text-xl text-center font-bold text-pink-700 ">
+{/* ***************************** */}
+
+<section className=" ">
+	<div className="container max-w-full mx-auto space-y-6 sm:space-y-12">
+		<a rel="noopener noreferrer" href="#" className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 ">
+			<img src="tech1.png" alt="" className="object-cover w-full min-h-screen rounded sm:h-96 lg:col-span-7 " />
+			<div className="p-6 py-80 space-y-2 lg:col-span-5">
+                <div className="  text-xl text-center font-bold text-black ">
         {words.map((word, index) => (
           <motion.span
             key={index}
@@ -30,23 +28,130 @@ export default function Accueil() {
           >
             {word} 
           </motion.span>
-        ))}
-      </div>
-                
-		<p className="text-xs text-white">By
-			<a rel="noopener noreferrer" href="#" className="text-xs hover:underline"> WomenLeadingTech</a>				</p> 
-			</div>
+        ))}        
+        </div>
             <a href="#">
-            <div className="mt-10 inline-block bg-pink-800 hover:bg-pink-500 text-black font-bold py-2 px-4 rounded">
+            <div className="mt-10 inline-block bg-black hover:bg-gray-50 text-pink-800 font-bold py-2 px-4 rounded">
 				<p>Plus d'infos ici...</p>
 			</div>
-            </a>            
-		</div>
+            </a> 
+			</div>
+		</a>
 	</div>
-</div>  
-</div> 
+</section>
+
+ {/* Section Actualité */}   
+ <div className="">
+
+{/* <h2 className="text-3xl font-bold text-center text-pink-800">***************Actualités***************</h2> */}
+
+<div className=" text-white min-h-screen flex">
+  {/* Barre latérale gauche */}
+  <aside className="w-1/4 p-4">
+    <div className="flex flex-col justify-between col-span-12  space-y-8 md:space-y-16 md:col-span-3">
+                  <div className="flex flex-col space-y-8 md:space-y-12">
+                        <div className="flex flex-col space-y-2">
+                            <h3 className="flex items-center space-x-2 ">
+                                <span className="flex-shrink-0 w-2 h-2 uppercase rounded-full dark:bg-violet-600"></span>
+                                <span className="text-xs font-bold tracking-wider uppercase">Exclusive</span>
+                            </h3>
+                            <a rel="noopener noreferrer" href="#" className="font-serif text-pink-600 hover:underline">Rendez-vous le 08 Mars à Diamniadio</a>
+                            <p className="text-xs dark:text-gray-600">47 minutes ago by
+                                <a rel="noopener noreferrer" href="#" className="hover:underline text-violet-600"> NIK</a>
+                            </p>
+                        </div>
+
+                        <div className="flex flex-col space-y-2">
+                            <h3 className="flex items-center space-x-2 dark:text-gray-600">
+                                <span className="flex-shrink-0 w-2 h-2 uppercase rounded-full dark:bg-violet-600"></span>
+                                <span className="text-xs font-bold tracking-wider uppercase">Exclusive</span>
+                            </h3>
+                            <a rel="noopener noreferrer" href="#" className="font-serif text-pink-600 hover:underline">Importance de la diversité et de l'inclusion dans la tech.</a>
+                            <p className="text-xs dark:text-gray-600">2 hours ago by
+                                <a rel="noopener noreferrer" href="#" className="hover:underline dark:text-violet-600"> NIK</a>
+                            </p>
+                        </div>
+                        <div className="flex flex-col space-y-2">
+                            <h3 className="flex items-center space-x-2 dark:text-gray-600">
+                                <span className="flex-shrink-0 w-2 h-2 uppercase rounded-full dark:bg-violet-600"></span>
+                                <span className="text-xs font-bold tracking-wider uppercase">Exclusive</span>
+                            </h3>
+                            <a rel="noopener noreferrer" href="#" className="font-serif text-pink-600 hover:underline">Startups fondées par des femmes dans le domaine de la tech.</a>
+                            <p className="text-xs dark:text-gray-600">4 hours ago by
+                                <a rel="noopener noreferrer" href="https://www.linkedin.com/posts/maimouna-leye-diakhat%C3%A9-06a2a395_dematacademy-ciomag-chatgpt-activity-7049393376063836161-s8DK/?originalSubdomain=sn" className="hover:underline dark:text-violet-600"> NIK</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div className="flex flex-col w-full space-y-2">
+                        <div className="flex w-full h-1 bg-opacity-10 ">
+                            <div className="w-1/2 h-full "></div>
+                        </div>
+                        <a  href="#" className="no-underline ">
+                            <span className="text-xs font-bold tracking-wider text-pink-600 hover:underline uppercase">See more exclusives</span>
+                           
+                        </a>
+                    </div>
+                </div> 
+  </aside>
+
+  {/* Contenu principal */}
+  <main className="w-1/2 p-4">
+    <img
+      src="./home.jpg"
+      alt="Femme dans le tech"
+      className="rounded-lg shadow-md "
+    />
+    
+  </main>
+
+  {/* Barre latérale droite */}
+  <aside className="w-1/4 p-4">
+           <div className="hidden py-2 xl:col-span-3 lg:col-span-4 md:hidden lg:block">
+                     <div className="mb-8 space-x-5 ">
+                        <button type="button" className="pb-2 px-4 text-xs font-bold uppercase border-b-2 border-transparent hover:border-pink-600 transition ">Latest</button>
+                        <button type="button" className="pb-2 px-4 text-xs font-bold uppercase border-b-2 border-transparent hover:border-pink-600 transition">Popular</button>
+                    </div>
+
+                     <div className="flex flex-col divide-y dark:divide-gray-300">
+                        <div className="flex px-1 py-4">
+                            <img alt="" className="flex-shrink-0 object-cover w-20 h-20 mr-4 dark:bg-gray-500" src="./MD_SENUM.png" />
+                            <div className="flex flex-col flex-grow">
+                                <a rel="noopener noreferrer" href="#" className="font-serif text-pink-600 hover:underline no-underline"> Maimouna Diakhaté, CEO SENUM.</a>
+                                <p className="mt-auto text-xs dark:text-gray-600">5 minutes ago
+                                    <a rel="noopener noreferrer" href="#" className="block dark:text-blue-600 lg:ml-2 lg:inline hover:underline">Politics</a>
+                                </p>
+                     </div>
+            </div>
+            <div className="flex px-1 py-4">
+                <img alt="" className="flex-shrink-0 object-cover w-20 h-20 mr-4 dark:bg-gray-500" src="./dicko.png" />
+                            <div className="flex flex-col flex-grow">
+                                <a rel="noopener noreferrer" href="https://africa.unwomen.org/en/news-and-events/stories/2018/08/dicko-sy" className="font-serif text-pink-600 no-underline hover:underline">
+                                    Dicko Sy, Co-founder of the startup Dictaf Corporation !
+                                    </a>
+                                <p className="mt-auto text-xs dark:text-gray-600">14 minutes ago
+                                    <a rel="noopener noreferrer" href="#" className="block dark:text-blue-600 lg:ml-2 lg:inline hover:underline">Agronomist</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="flex px-1 py-4">
+                            <img alt="" className="flex-shrink-0 object-cover w-20 h-20 mr-4 dark:bg-gray-500" src="./home4.jpg" />
+                            <div className="flex flex-col flex-grow">
+                                <a rel="noopener noreferrer" href="#" className="font-serif text-pink-600 hover:underline no-underline">Dernières avancées en intelligence artificielle et leur impact sur l'égalité des genres.</a>
+                                <p className="mt-auto text-xs dark:text-gray-600">22 minutes ago
+                                    <a rel="noopener noreferrer" href="https://www.latribune.fr/opinions/tribunes/l-ia-genere-de-nouvelles-formes-d-inegalites-entre-les-femmes-et-les-hommes-944092.html" className="block dark:text-blue-600 lg:ml-2 lg:inline hover:underline">World</a>
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+  </aside>
+</div>     
+
+{/* </div>  */}
       {/* Section A Propos */}
-      <div className="bg-[url('./Ad.jpg')] bg-cover bg-center">
+      <div className="">
 <section className="container mx-auto  px-4 sm:px-6 lg:px-8 rounded-lg shadow-md p-6">
   <h2 className="text-xl font-semibold text-pink-700 mb-4">A Propos</h2>
   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -58,7 +163,7 @@ export default function Accueil() {
     </div>
 
     <div className="border rounded-lg p-4">
-      <p className="text-pink-700 text-xl  italic">Missions
+      <p className="text-pink-700 text-xl font-bold  italic">Missions
         
       </p>
       <p className="text-sm text-white italic mt-2">
@@ -78,11 +183,11 @@ export default function Accueil() {
       <section className="py-6 sm:py-12  dark:text-gray-950 ">
 	<div className="container p-6 mx-auto space-y-8">
 		<div className="space-y-2 text-center">
-			<h2 className="text-3xl font-bold">Témoignages</h2>
-			<p className="font-serif text-sm dark:text-white text-white">Le Pouvoir du Numérique Raconté par Ceux Qui l'Ont Vécu.</p>
+			{/* <h2 className="text-3xl font-bold text-pink-800">***************Témoignages***************</h2> */}
+			<p className="font-bold text-sm text-pink-800">Le Pouvoir du Numérique Raconté par Ceux Qui l'Ont Vécu.</p>
 		</div>
 		<div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
-			<article className="flex flex-col bg-gray-50">
+			<article className="flex flex-col ">
 				<a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
 					<img alt="" className="object-cover w-full h-52 dark:bg-gray-500" src="./tem1.avif" />
 				</a>
@@ -97,7 +202,7 @@ export default function Accueil() {
 					</div>
 				</div>
 			</article>
-			<article className="flex flex-col bg-gray-50">
+			<article className="flex flex-col ">
 				<a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
 					<img alt="" className="object-cover w-full h-52 dark:bg-gray-500" src="./tem2.avif" />
 				</a>
@@ -113,7 +218,7 @@ export default function Accueil() {
 					</div>
 				</div>
 			</article>
-			<article className="flex flex-col bg-gray-50">
+			<article className="flex flex-col ">
 				<a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
 					<img alt="" className="object-cover w-full h-52 dark:bg-gray-500" src="./tem3.jpg" />
 				</a>
@@ -130,7 +235,7 @@ export default function Accueil() {
 					</div>
 				</div>
 			</article>
-			<article className="flex flex-col bg-gray-50">
+			<article className="flex flex-col ">
 				<a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
 					<img alt="" className="object-cover w-full h-52 dark:bg-gray-500" src="./tem4.jpg" />
 				</a>
@@ -152,119 +257,13 @@ export default function Accueil() {
 </section>
 </div>
    
-    </div>
-    {/* Section Actualité */}   
-    <div className="bg-[url('./bg3.avif')] bg-cover bg-center">
-
-   
-    <div className=" text-white min-h-screen flex">
-      {/* Barre latérale gauche */}
-      <aside className="w-1/4 p-4">
-        <div className="flex flex-col justify-between col-span-12 py-2 space-y-8 md:space-y-16 md:col-span-3">
-                      <div className="flex flex-col space-y-8 md:space-y-12">
-                            <div className="flex flex-col space-y-2">
-                                <h3 className="flex items-center space-x-2 ">
-                                    <span className="flex-shrink-0 w-2 h-2 uppercase rounded-full dark:bg-violet-600"></span>
-                                    <span className="text-xs font-bold tracking-wider uppercase">Exclusive</span>
-                                </h3>
-                                <a rel="noopener noreferrer" href="#" className="font-serif text-pink-600 hover:underline">Rendez-vous le 08 Mars à Diamniadio</a>
-                                <p className="text-xs dark:text-gray-600">47 minutes ago by
-                                    <a rel="noopener noreferrer" href="#" className="hover:underline text-violet-600"> NIK</a>
-                                </p>
-                            </div>
-
-                            <div className="flex flex-col space-y-2">
-                                <h3 className="flex items-center space-x-2 dark:text-gray-600">
-                                    <span className="flex-shrink-0 w-2 h-2 uppercase rounded-full dark:bg-violet-600"></span>
-                                    <span className="text-xs font-bold tracking-wider uppercase">Exclusive</span>
-                                </h3>
-                                <a rel="noopener noreferrer" href="#" className="font-serif text-pink-600 hover:underline">Importance de la diversité et de l'inclusion dans la tech.</a>
-                                <p className="text-xs dark:text-gray-600">2 hours ago by
-                                    <a rel="noopener noreferrer" href="#" className="hover:underline dark:text-violet-600"> NIK</a>
-                                </p>
-                            </div>
-                            <div className="flex flex-col space-y-2">
-                                <h3 className="flex items-center space-x-2 dark:text-gray-600">
-                                    <span className="flex-shrink-0 w-2 h-2 uppercase rounded-full dark:bg-violet-600"></span>
-                                    <span className="text-xs font-bold tracking-wider uppercase">Exclusive</span>
-                                </h3>
-                                <a rel="noopener noreferrer" href="#" className="font-serif text-pink-600 hover:underline">Startups fondées par des femmes dans le domaine de la tech.</a>
-                                <p className="text-xs dark:text-gray-600">4 hours ago by
-                                    <a rel="noopener noreferrer" href="https://www.linkedin.com/posts/maimouna-leye-diakhat%C3%A9-06a2a395_dematacademy-ciomag-chatgpt-activity-7049393376063836161-s8DK/?originalSubdomain=sn" className="hover:underline dark:text-violet-600"> NIK</a>
-                                </p>
-                            </div>
-                        </div>
-                        <div className="flex flex-col w-full space-y-2">
-                            <div className="flex w-full h-1 bg-opacity-10 ">
-                                <div className="w-1/2 h-full "></div>
-                            </div>
-                            <a  href="#" className="no-underline ">
-                                <span className="text-xs font-bold tracking-wider text-pink-600 hover:underline uppercase">See more exclusives</span>
-                               
-                            </a>
-                        </div>
-                    </div> 
-      </aside>
-
-      {/* Contenu principal */}
-      <main className="w-1/2 p-4">
-        <img
-          src="./home.jpg"
-          alt="Femme dans le tech"
-          className="rounded-lg shadow-md "
-        />
-        
-      </main>
-
-      {/* Barre latérale droite */}
-      <aside className="w-1/4 p-4">
-               <div className="hidden py-2 xl:col-span-3 lg:col-span-4 md:hidden lg:block">
-                         <div className="mb-8 space-x-5 ">
-                            <button type="button" className="pb-2 px-4 text-xs font-bold uppercase border-b-2 border-transparent hover:border-pink-600 transition ">Latest</button>
-                            <button type="button" className="pb-2 px-4 text-xs font-bold uppercase border-b-2 border-transparent hover:border-pink-600 transition">Popular</button>
-                        </div>
-
-                         <div className="flex flex-col divide-y dark:divide-gray-300">
-                            <div className="flex px-1 py-4">
-                                <img alt="" className="flex-shrink-0 object-cover w-20 h-20 mr-4 dark:bg-gray-500" src="./MD_SENUM.png" />
-                                <div className="flex flex-col flex-grow">
-                                    <a rel="noopener noreferrer" href="#" className="font-serif text-pink-600 hover:underline no-underline"> Maimouna Diakhaté, CEO SENUM.</a>
-                                    <p className="mt-auto text-xs dark:text-gray-600">5 minutes ago
-                                        <a rel="noopener noreferrer" href="#" className="block dark:text-blue-600 lg:ml-2 lg:inline hover:underline">Politics</a>
-                                    </p>
-                         </div>
-                </div>
-                <div className="flex px-1 py-4">
-                    <img alt="" className="flex-shrink-0 object-cover w-20 h-20 mr-4 dark:bg-gray-500" src="./dicko.png" />
-                                <div className="flex flex-col flex-grow">
-                                    <a rel="noopener noreferrer" href="https://africa.unwomen.org/en/news-and-events/stories/2018/08/dicko-sy" className="font-serif text-pink-600 no-underline hover:underline">
-                                        Dicko Sy, Co-founder of the startup Dictaf Corporation !
-                                        </a>
-                                    <p className="mt-auto text-xs dark:text-gray-600">14 minutes ago
-                                        <a rel="noopener noreferrer" href="#" className="block dark:text-blue-600 lg:ml-2 lg:inline hover:underline">Agronomist</a>
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div className="flex px-1 py-4">
-                                <img alt="" className="flex-shrink-0 object-cover w-20 h-20 mr-4 dark:bg-gray-500" src="./home4.jpg" />
-                                <div className="flex flex-col flex-grow">
-                                    <a rel="noopener noreferrer" href="#" className="font-serif text-pink-600 hover:underline no-underline">Dernières avancées en intelligence artificielle et leur impact sur l'égalité des genres.</a>
-                                    <p className="mt-auto text-xs dark:text-gray-600">22 minutes ago
-                                        <a rel="noopener noreferrer" href="https://www.latribune.fr/opinions/tribunes/l-ia-genere-de-nouvelles-formes-d-inegalites-entre-les-femmes-et-les-hommes-944092.html" className="block dark:text-blue-600 lg:ml-2 lg:inline hover:underline">World</a>
-                                    </p>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-      </aside>
-    </div>     
+    {/* </div> */}
     
 
     {/* contact */}
 
-    <section className="py-6 text-black ">
+    {/* <h2 className="text-3xl font-bold text-center text-pink-800">***************CONTACT***************</h2> */}
+    <section className="py-6 text-pink-800 ">
 	<div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
 		<div className="py-6 md:py-0 md:px-6">
 			<h1 className="text-4xl font-bold">Get in touch</h1>
@@ -304,7 +303,7 @@ export default function Accueil() {
 				<span className="mb-1">Message</span>
 				<textarea rows="3" placeholder="Bonjour..." className="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100 text-black"></textarea>
 			</label>
-			<button type="button" className="self-center bg-pink-700 w-28 px-4 py-2 font-bold rounded shadow focus:outline-none focus:ring hover:ring focus:ring-opacity-50">
+			<button type="button" className="self-center bg-pink-700 w-28 px-4 py-2 text-black font-bold rounded shadow focus:outline-none focus:ring hover:ring focus:ring-opacity-50">
                 Submit</button>
 		</form>
 	</div>

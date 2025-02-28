@@ -7,17 +7,18 @@ export default function Events() {
     }
     return (
         <>
-        <div className="custom-background py-24">
+        <div className="bg-pink-300 py-24">
 
         
         <div className="flex flex-none my-0 ">
           <div className="flex flex-wrap justify-center">
-          <h3 className="text-4xl font-bold text-center text-slate-300 my-10">
+          <h3 className="text-4xl font-bold text-center text-white my-10 m-6">
           Rejoignez-nous pour des moments d'apprentissage et de partage.  🚀 </h3>
-        <p className="text-center text-pink-700">
-        Chaque événement est une occasion de s'inspirer et d'échanger avec des expertes du domaine 
+          {/* <h4 className="text-2xl font-bold text-center text-white">
+          Chaque événement est une occasion de s'inspirer et d'échanger avec des expertes du domaine. </h4>
+        <p className="text-center text-pink-900">
           Découvrez les moments forts et engagez-vous avec notre communauté !
-        </p>
+        </p> */}
           </div>
         </div>
         

@@ -5,13 +5,13 @@ export default function Participate() {
 <div className="bg-[url('./prt.jpg')] bg-cover bg-center min-h-screen  flex flex-col items-center justify-center text-center py-48">
 	<h1 className=" mt-72  text-4xl font-extrabold text-pink-600">Chaque action compte ! </h1>
 
-	<h2 className=" mt-2 text-2xl font-extrabol text-pink">	Que vous soyez débutante, experte, mentor ou conférencière, votre contribution peut inspirer et transformer la place des femmes dans la tech.	</h2>
+	<h2 className=" mt-2 text-2xl font-extrabol text-pink-800">	Que vous soyez débutante, experte, mentor ou conférencière, votre contribution peut inspirer et transformer la place des femmes dans la tech.	</h2>
 	</div>
 <div className="bg-[url('./Ad.jpg')] bg-cover bg-center min-h-screen">
    <section className="  py-1">
    <h1 className="text-center text-2xl font-extrabold my-2 text-pink-500">Elles ont participé. </h1>
 
-	<div className="container max-w-5xl p-6 mx-auto space-y-6 ">
+	<div className="container max-w-5xl p-6 mx-auto space-y-6">
 		<a  href="/events" className="block max-w-sm gap-3 mx-auto sm:max-w-full group no-underline lg:grid lg:grid-cols-12">
 			<img src="./AGCCI.jpg" alt="" className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 " />
 			<div className="p-6 space-y-2 lg:col-span-5 bg-white">
